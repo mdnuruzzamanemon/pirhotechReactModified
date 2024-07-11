@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import logo from "../images/whitelogo.png";
+// import logo from "../images/whitelogo.png";
+import lineLogo from "../images/lineLogo.svg";
 import { Link, NavLink } from "react-router-dom";
 import profilePic from "../images/profilePic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -48,11 +49,11 @@ function Navbar() {
         contractSection.scrollIntoView({ behavior: "smooth"});
     }
 
-    const scrollToServices = () =>
-    {
-        const servicesSection = document.getElementById('ourServicesSection');
-        servicesSection.scrollIntoView({behavior: "smooth"});
-    }
+    // const scrollToServices = () =>
+    // {
+    //     const servicesSection = document.getElementById('ourServicesSection');
+    //     servicesSection.scrollIntoView({behavior: "smooth"});
+    // }
 
     
 
@@ -60,7 +61,9 @@ function Navbar() {
         <nav>
             <div className="nav-mid">
                 <div className="company-logo">
-                    <img src={logo} alt="logo" />
+                    <a href="/">
+                        <img src={lineLogo} alt="logo" />
+                    </a>
                 </div>
                 
                 <div className="menu" style={mblMenuOpen}>
@@ -86,7 +89,12 @@ function Navbar() {
                                     <li>SEO<span>{" />"}</span></li>
                                 </ul>
                             </NavLink> */}
-                            <Link to="/" onClick={scrollToServices}>Our Services <span>{" />"}</span></Link>
+
+                            {/* for scrolling with react */}
+                            {/* <Link to="/" onClick={scrollToServices}>Our Services <span>{" />"}</span></Link> */}
+
+                            {/* using a tag */}
+                            <a href="./#ourServicesSection">Our Services <span>{" />"}</span></a>
                         </li>
                         {/* <li>
                             <NavLink to="/blog">

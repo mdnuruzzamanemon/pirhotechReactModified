@@ -21,7 +21,8 @@
 
 .counter {
     color: var(--color1);
-    background: linear-gradient(to right, var(--color1) 49%, transparent 50%);
+    /* background: linear-gradient(to right, var(--color1) 49%, transparent 50%); */
+    background: linear-gradient(to right, #af40ff 49%, #4f46e5, transparent 50%);
     font-family: 'Figtree', sans-serif;
     text-align: center;
     width: 210px;
@@ -50,7 +51,7 @@
     margin-top: 40px;
 }
 
-.top a{
+/* .top a{
     position: relative;
     display: inline-flex;
     padding: 8px 15px;
@@ -70,7 +71,7 @@
     background-color: #ffffff;
     color: #212121;
     transition: 0.3s cubic-bezier(0.55, 0.06, 0.68, 0.19)ease-in-out;
-}
+} */
 
 .top h1{
     color: #ffffff;
@@ -106,17 +107,9 @@
     top: 20px;
     left: 22px;
     bottom: 20px;
-    background-color: hsla(240, 15%, 9%, 1);
-    background-image: radial-gradient(
-        at 88% 40%,
-        hsla(240, 15%, 9%, 1) 0px,
-        transparent 85%
-      ),
-      radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-      radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-      radial-gradient(at 0% 64%, hsla(263, 93%, 56%, 1) 0px, transparent 85%),
-      radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
-      radial-gradient(at 100% 99%, hsla(306, 100%, 57%, 1) 0px, transparent 85%);
+    background-image: url('../images/bg9.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .counter .counter-icon {
@@ -145,15 +138,135 @@
    
 }
 
-
-
 .plus{
     font-size: 2.4em;
 }
 
+/* view projects button  */
+.viewProjectBtn {
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #ae00ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background: linear-gradient(144deg, #af40ff, #4f46e5);
+       -webkit-background-clip: text;
+       background-clip: text;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       margin-top: 20px;
+       margin-bottom: 50px;
+   }
+   
+   .viewProjectBtn:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
+    background: linear-gradient(144deg, #af40ff, #4f46e5);
+       -webkit-background-clip: text;
+       background-clip: text;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+   }
+   
+   .viewProjectBtn span {
+    position: absolute;
+   }
+   
+   .viewProjectBtn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(144deg, #af40ff, #4f46e5);
+   }
+   
+   .viewProjectBtn:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+   .viewProjectBtn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(144deg, #af40ff, #4f46e5);
+   }
+   
+   .viewProjectBtn:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+   .viewProjectBtn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(144deg, #af40ff, #4f46e5);
+   }
+   
+   .viewProjectBtn:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+   .viewProjectBtn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(144deg, #af40ff, #4f46e5);
+   }
+   
+   .viewProjectBtn:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+   .viewProjectBtn:active {
+    background: #ae00af;
+    background: linear-gradient(144deg, #af40ff, #4f46e5);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    transition: 0.1s;
+   }
+   
+   .viewProjectBtn:active span:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+   
+/* end  */
+  
+
+
+
 @media screen and (max-width:1990px) {
     .counter {
         margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:1400px)
+{
+    .viewProjectsBtn
+    {
+        margin-bottom: 50px;
     }
 }
 @media screen and (max-width:750px)

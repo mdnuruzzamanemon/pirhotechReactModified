@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import '../css/statusCounter.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTerminal,faRocket,faPaintBrush, faCode, faPeopleGroup  } from '@fortawesome/free-solid-svg-icons';
+import { faTerminal, faRocket, faPaintBrush, faCode, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import { faSearchengin } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -43,12 +43,19 @@ function StatusCounter() {
                 <div className="row">
                     <div className="col-xxl-4">
                         <div className="top">
-                            <h1>Our stats speak for us..</h1><span>
+                            <h1 className="commonTextColor2">Our stats speak for us..</h1><span>
                                 <div className="terminal-icon"><FontAwesomeIcon icon={faTerminal} /></div>
                             </span>
 
-                            <p>In a very short time span, we have completed hundreds of orders and projects from companies from USA, Canada, Australia, Maldives, and Bangladesh.</p>
-                            <a href="">View Projects</a>
+                            <p className="commonTextColor">In a very short time span, we have completed hundreds of orders and projects from companies from USA, Canada, Australia, Maldives, and Bangladesh.</p>
+                            {/* view project button */}
+                            <button className="viewProjectBtn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span> View Projects
+                            </button>
+                            {/* end */}
                         </div>
                     </div>
                     <div className="col-xxl-8">

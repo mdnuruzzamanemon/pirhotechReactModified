@@ -15,6 +15,7 @@ footer p, footer strong, footer b, footer {
     padding: 0 0 20px;
     font-family: rubik;
   padding-top:30px;
+  background-image: url('../images/bg12.jpg');
   
 }
 
@@ -186,6 +187,11 @@ footer p, footer li {
     padding-bottom: 15px;
     font-size: 16px;
     position: relative;
+    background: linear-gradient(144deg, #af40ff, #e20f0f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer-title:after {

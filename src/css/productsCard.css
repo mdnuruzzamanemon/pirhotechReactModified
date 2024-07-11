@@ -120,10 +120,15 @@
     text-align: center;
     color: #fff;
     font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(248, 246, 246, 0.5);
+    /* text-shadow: 2px 2px 4px rgba(248, 246, 246, 0.5); */
     margin: 10px 0;
   }
-  .js-tilt-glare
+  /* .js-tilt-glare
   {
     width: auto !important;
-  }
+  } */
+   .productTiltBox
+   {
+    padding: 20px !important;
+    padding-top: 40px !important;
+   }

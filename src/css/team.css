@@ -62,7 +62,11 @@ h1 {
 }
 
 .fab:hover {
-    color: rgba(255, 6, 224, 0.61);
+    background: linear-gradient(144deg, #af40ff, #e20f0f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transform: scale(1.1);
 }
 

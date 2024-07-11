@@ -83,7 +83,7 @@ function Team() {
                                     </div>
                                     <div className="mb-3">
 
-                                        <h2 className="text-uppercase text-center role">Fonunder</h2>
+                                        <h2 className="text-uppercase text-center role">Founder</h2>
 
                                     </div>
                                     <div className="box">

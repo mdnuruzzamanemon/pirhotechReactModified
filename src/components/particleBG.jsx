@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-
+import particleBgImage from "../images/particle_bg_img.svg"
 
 function ParticleBG()
 {
@@ -18,9 +18,12 @@ function ParticleBG()
         init={ loadparticles }
         options={{
             background: {
-                color: {
-                    value: "#111111",
-                },
+                // color: {
+                //     value: "#111111",
+                // },
+                image: `url(${particleBgImage})`, // Set the path to your background image here
+                size: "cover", // Cover the whole container
+                position: "50% 50%", // Center the image
             },
             fullScreen: {
                 "enable": true,

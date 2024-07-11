@@ -24,11 +24,12 @@ code {
   display: flex;
 }
 .company-logo img{
-  width: 100px;
+  /* width: 100px; */
+  height: 100%;
 }
 .company-logo
 {
-  width: 10%;
+  width: 20%;
 }
 .menu
 {
@@ -167,7 +168,11 @@ code {
 }
 
 .typewriterText{
-  color: #40bd00;
+  background: linear-gradient(144deg, #af40ff, #e20f0f);
+       -webkit-background-clip: text;
+       background-clip: text;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
 }
 .headerDes
 {
@@ -254,7 +259,7 @@ code {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   z-index: -1;
-  animation: steam 20s linear infinite;
+  animation: steam 75s linear infinite;
 }
 
 
@@ -321,6 +326,24 @@ code {
 .commonBtn:hover span::before, .commonBtn:focus span::before {
   animation: chitchat linear both 1.2s;
 }
+
+.commonTextColor
+{
+  background: linear-gradient(144deg, #af40ff, #4f46e5);
+       -webkit-background-clip: text;
+       background-clip: text;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+}
+.commonTextColor2
+{
+  background: linear-gradient(144deg, #af40ff, #e20f0f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 @keyframes chitchat {
   0% {
@@ -437,8 +460,15 @@ code {
 
 
 /* resoponsive code for navbar */
+@media screen and (max-width: 1140px)
+{
+  .headerText
+  {
+    width: 40%;
+  }
+}
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 980px) {
 
   .menu ul li a
   {
@@ -446,7 +476,7 @@ code {
   }
 }
 
-@media screen and (max-width: 810px)
+@media screen and (max-width: 850px)
 {
   .navbarToggler
   {
@@ -517,11 +547,24 @@ code {
   {
     padding: 5px !important;
   }
-  
+  .headerImage
+  {
+    width: 50%;
+  }
+  .company-logo
+  {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 740px)
+{
+  .headerText
+  {
+    width: 50%;
+  }
 }
 
-
-@media screen and (max-width: 550px)
+@media screen and (max-width: 600px)
 {
   .menu
   {
@@ -556,6 +599,10 @@ code {
   .company-logo img
   {
     max-width: 150%;
+  }
+  .company-logo
+  {
+    width: 35%;
   }
 }
 

@@ -34,6 +34,7 @@
 .serviceMain {
   position: relative;
   overflow: hidden;
+  
 }
 
 .serviceMain::before {
@@ -43,6 +44,9 @@
   height: 100%;
   background-color: #181717; /* Set your desired background color */
   z-index: -1;
+  background-image: url('../images/bg15.jpg');
+  background-position: center;
+  background-size: 100% 100%;
 
 }
 
@@ -65,7 +69,7 @@
   text-align: center;
   color: #fff;
   font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(248, 246, 246, 0.5);
+  /* text-shadow: 2px 2px 4px rgba(248, 246, 246, 0.5); */
   margin: 30px 0;
 }
 .serContainer {
@@ -105,17 +109,8 @@
   align-items: center;
   /* background: var(--dark-color); */
   transition: var(--transition);
-  background-color: hsla(240, 15%, 9%, 1);
-  background-image: radial-gradient(
-      at 88% 40%,
-      hsla(240, 15%, 9%, 1) 0px,
-      transparent 85%
-    ),
-    radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-    radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-    radial-gradient(at 0% 64%, hsla(263, 93%, 56%, 1) 0px, transparent 85%),
-    radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
-    radial-gradient(at 100% 99%, hsla(306, 100%, 57%, 1) 0px, transparent 85%);
+  background-image: url('../images/bg8.jpg');
+  
 }
 .card__bx::before,
 .card__bx::after {
@@ -170,12 +165,13 @@
 }
 .card__bx .card__data .card__icon {
   color: #fff;
-  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 6px #fff;
+  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 6px  #af40ff;
+  
 }
 .card__bx:hover .card__data .card__icon {
   color: var(--dark-color);
   background-color: #fff;
-  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 300px #fff;
+  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 300px #7644FE;
 }
 .card__bx .card__data .card__content {
   display: flex;
@@ -218,18 +214,10 @@
 .card__bx:hover .card__data a {
   color: #fff;
   background-color: hsla(240, 15%, 9%, 1);
-  background-image: radial-gradient(
-      at 88% 40%,
-      hsla(240, 15%, 9%, 1) 0px,
-      transparent 85%
-    ),
-    radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-    radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-    radial-gradient(at 0% 64%, hsla(263, 93%, 56%, 1) 0px, transparent 85%),
-    radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
-    radial-gradient(at 100% 99%, hsla(306, 100%, 57%, 1) 0px, transparent 85%);
+  
 }
 .card__bx:hover .card__data a:hover {
   border-color: var(--dark-color);
   background-color: #fff;
+  color: var(--dark-color);
 }

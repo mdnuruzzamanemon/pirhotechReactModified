@@ -4,14 +4,46 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaintBrush, faCode, faChartSimple } from '@fortawesome/free-solid-svg-icons';
 // import {  faSearchengin, faAndroid, faApple } from '@fortawesome/free-regular-svg-icons';
 import { faSearchengin, faAndroid, faApple } from '@fortawesome/free-brands-svg-icons';
+import ServicesCard from "./servicesCard";
 
 
 function OurServices() {
   return (
     <div className="serviceMain" id="ourServicesSection">
-      <h1>Our Services</h1>
+      <h1 className="commonTextColor2">Our Services</h1>
       <section className="container serContainer">
         <section className="card__container">
+          <ServicesCard
+            title="Designing"
+            description="From concept to creation, our designs inspire and captivate, blending..."
+            icon={faPaintBrush}
+          />
+          <ServicesCard
+            title="Develoment"
+            description="Innovative solutions crafted through cutting-edge technology and..."
+            icon={faCode}
+          />
+          <ServicesCard
+            title="SEO"
+            description="We optimize your website to rank higher in search engine results, driving..."
+            icon={faSearchengin}
+          />
+          <ServicesCard
+            title="Digital Marketing"
+            description="Strategic campaigns that resonate, leveraging digital platforms to drive..."
+            icon={faChartSimple}
+          />
+          <ServicesCard
+            title="Android App Development"
+            description="Creating powerful Android solutions for..."
+            icon={faAndroid}
+          />
+          <ServicesCard
+            title="IOS App Development"
+            description="Crafting sleek, user-centric iOS apps to ..."
+            icon={faApple}
+          />
+{/*           
           <div className="card__bx">
             <div className="card__data">
               <div className="card__icon">
@@ -89,7 +121,7 @@ function OurServices() {
                 <a className="commonBtn" href="#"> <span>Read More</span></a>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </section>
 

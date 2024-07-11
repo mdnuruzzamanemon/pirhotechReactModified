@@ -42,7 +42,7 @@ function ProductsCard(props) {
                     }}
                 >
                     <img src={props.imgUrl} alt="appLogo" />
-                    <h3>{props.name}</h3>
+                    <h3 className="commonTextColor">{props.name}</h3>
                 </a>
             </div>
             {showPopup && <Popup appLink={props.appLink} name={props.name} onClose={() => setShowPopup(false)} />}
@@ -92,7 +92,7 @@ function Products() {
         <div className="productSec" id="products">
             <div className="productMid" >
 
-                <h1 className="productTittle">Our Products</h1>
+                <h1 className="productTittle commonTextColor2">Our Products</h1>
 
                 <div className="productRow1 row">
                     {productList.map(createCards)}
