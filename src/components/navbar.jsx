@@ -11,6 +11,7 @@ function Navbar() {
     const { isLoggedIn, logout } = useAuth();
     const [menuOpen, setMenuOpen] = useState(false);
     const [mblMenuOpen, setMblMenuOpen] =useState({});
+    const [overlayPos, setOverlayPos] =useState({});
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -26,15 +27,22 @@ function Navbar() {
 
     // for mobile menu
     const openMblMenu= ()=>{
+        setOverlayPos({
+            left: '0',
+            right: '0'
+        });
         const openMode={
-            display: 'block'
+            right: '0'
         }
         setMblMenuOpen(openMode);
     }
 
     const closeMblMenu = ()=>{
+        setOverlayPos({
+            right: '-100%'
+        });
         const closeMode={
-            display: 'none'
+            right: '-100%'
         }
         setMblMenuOpen(closeMode);
     }
@@ -66,7 +74,9 @@ function Navbar() {
                     </a>
                 </div>
                 
+                <div className="overlay" style={overlayPos}></div>
                 <div className="menu" style={mblMenuOpen}>
+                    
                     <button className="mblMenuCross" onClick={closeMblMenu}><FontAwesomeIcon icon={faXmark} /></button>
                     <ul className="mainMenu">
                         <li>

@@ -83,7 +83,7 @@ function Team() {
                                     </div>
                                     <div className="mb-3">
 
-                                        <h2 className="text-uppercase text-center role">Founder</h2>
+                                        <h2 className="text-uppercase text-center role">Founder & CTO</h2>
 
                                     </div>
                                     <div className="box">

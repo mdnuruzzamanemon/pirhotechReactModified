@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }
 
 code {
@@ -38,6 +39,18 @@ code {
   align-items: center;
   justify-content: right;
 }
+.overlay
+{
+  position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    transition: .3s;
+    z-index: 5;
+    transition: right 0.3s ease;
+}
 .menu ul
 {
   list-style: none;
@@ -62,6 +75,39 @@ code {
 {
   color: red;
 }
+/* .menu ul li a.active::after
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  translate: -50% -50%;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  padding: 10px;
+  background: conic-gradient(
+    from 0deg,
+    #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000
+
+  );
+}
+
+@keyframes rotate
+{
+  from
+  {
+    --derection: 0deg;
+  }
+  to
+  {
+    --derection: 360deg;
+  }
+}
+.menu ul li a.active::before
+{
+  filter: blur(0.5);
+} */
 .menu ul li .subMenu
 {
   display: none;
@@ -79,7 +125,7 @@ code {
 .menu ul li:hover span
 {
   color: #15e0ee;
-  font-size: 20px;
+  /* font-size: 20px; */
   transition: .4s;
 }
 .profileBtn
@@ -489,17 +535,17 @@ code {
   {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     bottom: 0;
     width: 40%;
     background-color: #0e0e0e;
     z-index: 11;
-    display: none;
+    transition: right 0.3s ease;
   }
   .menu ul
   {
     display: block;
-    margin-top: 90px;
+    margin-top: -90px;
   }
   .menu ul li a
   {
@@ -568,7 +614,7 @@ code {
 {
   .menu
   {
-    width: 60%;
+    width: 70%;
   }
   .comName
   {

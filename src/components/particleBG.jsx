@@ -33,7 +33,7 @@ function ParticleBG()
             interactivity: {
                 events: {
                     onClick: {
-                        enable: true,
+                        enable: false,
                         mode: "push",
                     },
                     onHover: {
@@ -54,10 +54,10 @@ function ParticleBG()
             },
             particles: {
                 color: {
-                    value: "#ffff",
+                    value: "#75B3FE",
                 },
                 links: {
-                    color: "#ffff",
+                    color: "#236BC0",
                     distance: 150,
                     enable: true,
                     opacity: 0.3,
